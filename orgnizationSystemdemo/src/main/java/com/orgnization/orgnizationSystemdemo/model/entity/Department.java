@@ -24,10 +24,10 @@ public class Department {
     @Column(length = 500)
     private String description;
     
-    @OneToMany(mappedBy = "department", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "department", cascade = {CascadeType.PERSIST, CascadeType.MERGE}, fetch = FetchType.LAZY)
     private Set<DepartmentRole> departmentRoles = new HashSet<>();
     
-    @OneToMany(mappedBy = "department")
+    @OneToMany(mappedBy = "department", fetch = FetchType.LAZY)
     private Set<User> users = new HashSet<>();
     
     @Column(name = "created_at")

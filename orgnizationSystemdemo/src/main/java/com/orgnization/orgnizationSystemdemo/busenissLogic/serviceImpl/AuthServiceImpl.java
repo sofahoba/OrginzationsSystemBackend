@@ -9,9 +9,9 @@ import org.springframework.stereotype.Service;
 
 import com.orgnization.orgnizationSystemdemo.busenissLogic.specs.AuthService;
 import com.orgnization.orgnizationSystemdemo.config.security.CustomUserDetails;
-import com.orgnization.orgnizationSystemdemo.dto.AuthRequest;
-import com.orgnization.orgnizationSystemdemo.dto.AuthResponse;
-import com.orgnization.orgnizationSystemdemo.dto.RegisterRequest;
+import com.orgnization.orgnizationSystemdemo.dto.auth.AuthRequest;
+import com.orgnization.orgnizationSystemdemo.dto.auth.AuthResponse;
+import com.orgnization.orgnizationSystemdemo.dto.auth.RegisterRequest;
 import com.orgnization.orgnizationSystemdemo.model.entity.User;
 import com.orgnization.orgnizationSystemdemo.repository.user.UserRepository;
 import com.orgnization.orgnizationSystemdemo.util.JwtUtill;
