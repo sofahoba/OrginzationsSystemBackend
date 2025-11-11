@@ -1,4 +1,4 @@
-package com.orgnization.orgnizationSystemdemo.dto;
+package com.orgnization.orgnizationSystemdemo.dto.auth;
 
 import java.util.UUID;
 

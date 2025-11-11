@@ -5,9 +5,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.orgnization.orgnizationSystemdemo.busenissLogic.serviceImpl.AuthServiceImpl;
 import com.orgnization.orgnizationSystemdemo.busenissLogic.specs.AuthService;
-import com.orgnization.orgnizationSystemdemo.dto.AuthRequest;
-import com.orgnization.orgnizationSystemdemo.dto.AuthResponse;
-import com.orgnization.orgnizationSystemdemo.dto.RegisterRequest;
+import com.orgnization.orgnizationSystemdemo.dto.auth.AuthRequest;
+import com.orgnization.orgnizationSystemdemo.dto.auth.AuthResponse;
+import com.orgnization.orgnizationSystemdemo.dto.auth.RegisterRequest;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;

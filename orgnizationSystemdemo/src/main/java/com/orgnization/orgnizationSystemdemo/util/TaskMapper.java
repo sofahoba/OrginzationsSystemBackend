@@ -26,6 +26,9 @@ public class TaskMapper {
     assignedByDto.setLastName(task.getAssignedBy().getLastName());
     assignedByDto.setEmail(task.getAssignedBy().getEmail());
     dto.setAssignedBy(assignedByDto);
+    assignedByDto.setType(task.getAssignedBy().getType());
+    assignedByDto.setDepartmentId(task.getAssignedBy().getDepartment().getId());
+    assignedByDto.setDepartmentRoleId(task.getAssignedBy().getDepartmentRole().getId());
 
     // assignedTo
     SimpleUserDto assignedToDto = new SimpleUserDto();
@@ -34,6 +37,9 @@ public class TaskMapper {
     assignedToDto.setLastName(task.getAssignedTo().getLastName());
     assignedToDto.setEmail(task.getAssignedTo().getEmail());
     dto.setAssignedTo(assignedToDto);
+    assignedToDto.setType(task.getAssignedTo().getType());
+    assignedToDto.setDepartmentId(task.getAssignedTo().getDepartment().getId());
+    assignedToDto.setDepartmentRoleId(task.getAssignedTo().getDepartmentRole().getId());
 
     return dto;
 }
