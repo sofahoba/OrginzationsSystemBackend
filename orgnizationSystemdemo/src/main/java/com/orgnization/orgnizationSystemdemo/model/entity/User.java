@@ -5,7 +5,6 @@ import java.util.HashSet;
 import java.util.Set;
 import java.util.UUID;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.orgnization.orgnizationSystemdemo.model.enums.SeniorityType;
 
